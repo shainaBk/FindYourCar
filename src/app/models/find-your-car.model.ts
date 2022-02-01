@@ -1,18 +1,15 @@
 export class FindYourCar {
-    name!: String;
-    texte!: String;
-    price!: number;
-    adDate!: number;
-    releaseDate!: number;
-    cmpt!: number;
 
-    constructor(name: String, price: number, d1: number, d2: number) {
-        this.name = name;
-        this.texte = "c'est une " + name;
-        this.price = price;
-        this.adDate = d1;
-        this.releaseDate = d2;
+    cmpt!: number
+    texte?: string
+    constructor(
+        public name: string,
+        public price: number,
+        public adDate: number,
+        public releaseDate?: number
+    ) {
         this.cmpt = 0;
+        this.texte = "c'est une " + this.name
     }
 
 }

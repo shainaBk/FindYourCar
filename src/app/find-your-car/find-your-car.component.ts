@@ -9,7 +9,6 @@ import { FindYourCar } from '../models/find-your-car.model'
 export class FindYourCarComponent implements OnInit {//le ! c'est pour dire init not yet
   @Input() findyourcar!: FindYourCar;
 
-
   ngOnInit() {
 
   }

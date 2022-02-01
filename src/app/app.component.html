@@ -1,2 +1,1 @@
-<app-find-your-car [findyourcar]="aCar"></app-find-your-car>
-<app-find-your-car [findyourcar]="aCar2"></app-find-your-car>
+<app-find-your-car *ngFor="let findyourcar of cars" [findyourcar]="findyourcar"></app-find-your-car>

@@ -9,9 +9,23 @@ import { FindYourCar } from './models/find-your-car.model'
 export class AppComponent implements OnInit {
   aCar!: FindYourCar;
   aCar2!: FindYourCar;
+  cars!: FindYourCar[];
 
   ngOnInit() {
-    this.aCar = new FindYourCar("Renaud", 6000, 2016, 2005);
-    this.aCar2 = new FindYourCar("Peugeot", 6000, 2016, 2005);
+    this.cars = [
+      {
+        name: "renaud",
+        price: 6000,
+        adDate: 2016,
+        cmpt: 0
+
+      },
+      {
+        name: "Pegeaot",
+        price: 6000,
+        adDate: 2016,
+        cmpt: 0
+      }
+    ];
   }
 }

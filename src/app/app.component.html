@@ -1,1 +1,5 @@
-<app-find-your-car *ngFor="let findyourcar of cars" [findyourcar]="findyourcar"></app-find-your-car>
+<div class="h-screen px-5">
+    <app-nav></app-nav>
+    <app-find-your-car *ngFor="let findyourcar of cars" [findyourcar]="findyourcar"></app-find-your-car>
+    <app-footer></app-footer>
+</div>

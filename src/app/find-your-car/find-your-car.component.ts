@@ -13,8 +13,8 @@ export class FindYourCarComponent implements OnInit {//le ! c'est pour dire init
 
   constructor(private user:LeboncoinService) {
     this.user.getCustomerData().subscribe(data=>{
-      console.warn(data);
-      this.data=data
+      console.log(data);
+      this.data=Array(data)
     })
   }
 

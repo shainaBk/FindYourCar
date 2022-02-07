@@ -9,6 +9,6 @@ export class LeboncoinService {
   constructor(private _obj:HttpClient) { }
 
   getCustomerData(){
-    return this._obj.get('https://jsonplaceholder.typicode.com/users')
+    return this._obj.get('http://www.omdbapi.com/?apikey=7469e52c&t=car\n')
   }
 }

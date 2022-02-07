@@ -18,7 +18,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder":"@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/find-your-car",
             "index": "src/index.html",
@@ -33,6 +33,9 @@
             "styles": [
               "src/styles.scss"
             ],
+            "customWebpackConfig": {
+              "path": "./webpack.config.js"
+            },          
             "scripts": []
           },
           "configurations": {

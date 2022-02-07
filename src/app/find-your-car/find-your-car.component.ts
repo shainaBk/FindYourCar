@@ -10,7 +10,6 @@ export class FindYourCarComponent implements OnInit {//le ! c'est pour dire init
   @Input() findyourcar!: FindYourCar;
 
   ngOnInit() {
-
   }
 
   onClickCmpt() {

@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { FindYourCarComponent } from './find-your-car/find-your-car.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
-import { FindYourCar2Component } from './find-your-car2/find-your-car2.component';
+import { SearchACarComponent } from './search-a-car/search-a-car.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { FindYourCar2Component } from './find-your-car2/find-your-car2.component
     FindYourCarComponent,
     NavComponent,
     FooterComponent,
-    FindYourCar2Component
+    SearchACarComponent,
   ],
   imports: [
     BrowserModule,

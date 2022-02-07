@@ -7,6 +7,7 @@ import { FindYourCarComponent } from './find-your-car/find-your-car.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchACarComponent } from './search-a-car/search-a-car.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SearchACarComponent } from './search-a-car/search-a-car.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

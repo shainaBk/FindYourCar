@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FindYourCar } from '../models/find-your-car.model'
+import {LeboncoinService} from '../leboncoin.service'
 
 @Component({
   selector: 'app-find-your-car',
@@ -8,6 +9,14 @@ import { FindYourCar } from '../models/find-your-car.model'
 })
 export class FindYourCarComponent implements OnInit {//le ! c'est pour dire init not yet
   @Input() findyourcar!: FindYourCar;
+  data:any;
+
+  constructor(private user:LeboncoinService) {
+    this.user.getCustomerData().subscribe(data=>{
+      console.warn(data);
+      this.data=data
+    })
+  }
 
   ngOnInit() {
   }

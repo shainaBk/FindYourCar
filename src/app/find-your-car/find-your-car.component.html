@@ -1,10 +1,5 @@
 <div class="face-snap-card bg-slate-200">
-    <p>{{findyourcar.name}}</p>
-    <p >annonce: {{findyourcar.texte}}</p>
-    <p>{{findyourcar.price}}$</p>
-    <p>posté le:{{findyourcar.adDate}}</p>
-    <p *ngIf="findyourcar.releaseDate">date de mise en vente:{{findyourcar.releaseDate}}</p>
-    <br>
-    <button (click)="onClickCmpt()">Click there !</button>
-    <span [ngStyle]="{ color: 'rgb(255, ' + findyourcar.cmpt + ', 255)' }">{{findyourcar.cmpt}} </span>
+    <tr *ngFor="let item of data">
+      <td>{{item.name}}</td>
+    </tr>
 </div>
